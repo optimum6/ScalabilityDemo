@@ -18,7 +18,7 @@ def plotData(data):
         x.append(key)
         y.append(data[key])
     plt.plot(x,y)
-    plt.show()
+    plt.show(block=True)
 
 plots = createData('graphPlots.txt')
 plotData(plots)
